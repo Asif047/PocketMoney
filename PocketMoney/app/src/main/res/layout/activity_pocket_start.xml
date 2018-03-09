@@ -1,0 +1,427 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.asif047.pocketmoney.PocketStartActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        >
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/linear_layout_last_engagement"
+            android:layout_marginTop="10dp"
+            android:scrollbars="vertical">
+
+            //aaa
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/linear_layout_last_engagement"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                        android:id="@+id/card_current_status"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="10dp"
+                        android:layout_weight="1"
+
+                        app:cardBackgroundColor="#ffffff"
+                        card_view:cardCornerRadius="10dp"
+                        card_view:cardElevation="5dp"
+                        card_view:cardUseCompatPadding="true"
+
+                        >
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/current_status"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:text="Current Status"
+                                android:textColor="#000000"
+                                android:textSize="15dp" />
+
+                            <ImageView
+                                android:layout_width="60dp"
+                                android:layout_height="60dp"
+                                android:layout_gravity="center"
+
+                                android:layout_marginBottom="10dp"
+                                android:src="@drawable/ic_current_status" />
+
+
+                        </LinearLayout>
+
+
+                    </android.support.v7.widget.CardView>
+
+
+                    <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                        android:id="@+id/card_all_transaction"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="10dp"
+
+                        android:layout_weight="1"
+
+                        app:cardBackgroundColor="#ffffff"
+                        card_view:cardCornerRadius="10dp"
+                        card_view:cardElevation="5dp"
+                        card_view:cardUseCompatPadding="true">
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/all_transaction"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:text="All Transactions"
+                                android:textColor="#000000"
+                                android:textSize="15dp" />
+
+                            <ImageView
+                                android:layout_width="60dp"
+                                android:layout_height="60dp"
+                                android:layout_gravity="center"
+
+                                android:layout_marginBottom="10dp"
+                                android:src="@drawable/ic_all_transaction" />
+
+
+                        </LinearLayout>
+
+
+                    </android.support.v7.widget.CardView>
+
+
+                </LinearLayout>
+
+
+                //zzz
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                        android:id="@+id/card_add_income"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="10dp"
+
+                        android:layout_weight="1"
+
+                        app:cardBackgroundColor="#ffffff"
+                        card_view:cardCornerRadius="10dp"
+                        card_view:cardElevation="5dp"
+                        card_view:cardUseCompatPadding="true">
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/add_income"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:text="Add Income"
+                                android:textColor="#000000"
+                                android:textSize="15dp" />
+
+                            <ImageView
+                                android:layout_width="60dp"
+                                android:layout_height="60dp"
+                                android:layout_gravity="center"
+
+                                android:layout_marginBottom="10dp"
+                                android:src="@drawable/ic_add_income" />
+
+
+                        </LinearLayout>
+
+
+                    </android.support.v7.widget.CardView>
+
+
+                    <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                        android:id="@+id/card_add_expense"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="10dp"
+
+                        android:layout_weight="1"
+
+                        app:cardBackgroundColor="#ffffff"
+                        card_view:cardCornerRadius="10dp"
+                        card_view:cardElevation="5dp"
+                        card_view:cardUseCompatPadding="true">
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/add_expense"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:text="Add Expense"
+                                android:textColor="#000000"
+                                android:textSize="15dp" />
+
+                            <ImageView
+                                android:layout_width="60dp"
+                                android:layout_height="60dp"
+                                android:layout_gravity="center"
+
+                                android:layout_marginBottom="10dp"
+                                android:src="@drawable/ic_add_expense" />
+
+
+                        </LinearLayout>
+
+
+                    </android.support.v7.widget.CardView>
+
+
+                </LinearLayout>
+                //zzz
+
+
+                //zzz
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                        android:id="@+id/card_monthly_income"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="10dp"
+
+                        android:layout_weight="1"
+
+                        app:cardBackgroundColor="#ffffff"
+                        card_view:cardCornerRadius="10dp"
+                        card_view:cardElevation="5dp"
+                        card_view:cardUseCompatPadding="true">
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/monthly_income"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:text="Monthly Income"
+                                android:textColor="#000000"
+                                android:textSize="15dp" />
+
+                            <ImageView
+                                android:layout_width="60dp"
+                                android:layout_height="60dp"
+                                android:layout_gravity="center"
+
+                                android:layout_marginBottom="10dp"
+                                android:src="@drawable/ic_pie_income" />
+
+                        </LinearLayout>
+
+
+                    </android.support.v7.widget.CardView>
+
+
+                    <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                        android:id="@+id/card_monthly_expense"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="10dp"
+
+                        android:layout_weight="1"
+
+                        app:cardBackgroundColor="#ffffff"
+                        card_view:cardCornerRadius="10dp"
+                        card_view:cardElevation="5dp"
+                        card_view:cardUseCompatPadding="true">
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/monthly_expense"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:text="Monthly Expense"
+                                android:textColor="#000000"
+                                android:textSize="15dp" />
+
+                            <ImageView
+                                android:layout_width="60dp"
+                                android:layout_height="60dp"
+                                android:layout_gravity="center"
+                                android:src="@drawable/ic_pie_income" />
+
+                        </LinearLayout>
+
+
+                    </android.support.v7.widget.CardView>
+
+
+                </LinearLayout>
+                //zzz
+
+
+                //zzz
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                        android:id="@+id/card_monthly_transaction"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="10dp"
+
+                        android:layout_weight="1"
+
+                        app:cardBackgroundColor="#ffffff"
+                        card_view:cardCornerRadius="10dp"
+                        card_view:cardElevation="5dp"
+                        card_view:cardUseCompatPadding="true">
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/monthly_transaction"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:text="Monthly Transaction"
+                                android:textColor="#000000"
+                                android:textSize="15dp" />
+
+                            <ImageView
+                                android:layout_width="60dp"
+                                android:layout_height="60dp"
+                                android:layout_gravity="center"
+                                android:layout_marginBottom="10dp"
+                                android:src="@drawable/ic_monthly_transaction" />
+
+
+                        </LinearLayout>
+
+
+                    </android.support.v7.widget.CardView>
+
+
+                    <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                        android:id="@+id/card_transaction_graph"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="10dp"
+
+                        android:layout_weight="1"
+
+                        app:cardBackgroundColor="#ffffff"
+                        card_view:cardCornerRadius="10dp"
+                        card_view:cardElevation="5dp"
+                        card_view:cardUseCompatPadding="true">
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/transaction_graph"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:text="Transaction Graph"
+                                android:textColor="#000000"
+                                android:textSize="15dp" />
+
+                            <ImageView
+                                android:layout_width="60dp"
+                                android:layout_height="60dp"
+                                android:layout_gravity="center"
+                                android:layout_marginBottom="10dp"
+                                android:src="@drawable/ic_transaction_graph" />
+
+
+                        </LinearLayout>
+
+
+                    </android.support.v7.widget.CardView>
+
+
+                </LinearLayout>
+                //zzz
+
+
+            </LinearLayout>
+
+            //aaa
+
+
+        </ScrollView>
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

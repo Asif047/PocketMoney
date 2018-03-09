@@ -1,0 +1,713 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.asif047.pocketmoney.StatusActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="10dp"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_margin="10dp"
+            >
+
+
+            <TextView
+                android:layout_width="170dp"
+                android:layout_height="wrap_content"
+                android:text="Pocket status:"
+                android:textColor="#000000"
+                android:textSize="25dp"
+                />
+
+
+            <TextView
+                android:id="@+id/textview_pocket_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="pocket status"
+                android:textColor="#000000"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:layout_marginLeft="10dp"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_margin="10dp"
+            >
+
+
+            <TextView
+                android:layout_width="170dp"
+                android:layout_height="wrap_content"
+                android:text="Income:"
+                android:textColor="#19b61b"
+                android:textSize="20dp"
+                />
+
+
+            <TextView
+                android:id="@+id/textview_income_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="income"
+                android:textStyle="bold"
+                android:textColor="#19b61b"
+                android:textSize="18dp"
+                android:layout_marginLeft="10dp"
+                />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_margin="10dp"
+            >
+
+
+            <TextView
+                android:layout_width="170dp"
+                android:layout_height="wrap_content"
+                android:text="Expense:"
+                android:textColor="#e41111"
+                android:textSize="20dp"
+                />
+
+
+            <TextView
+                android:id="@+id/textview_expense_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="expense"
+                android:textStyle="bold"
+                android:textColor="#e41111"
+                android:textSize="18dp"
+                android:layout_marginLeft="10dp"
+                />
+
+
+
+
+
+
+
+
+        </LinearLayout>
+
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:text="Month"
+                android:textColor="#1f5bd4"
+                android:textSize="18dp"
+                android:gravity="center"
+                />
+
+
+            <TextView
+                android:layout_width="140dp"
+                android:layout_height="wrap_content"
+                android:text="Income"
+                android:textColor="#19b61b"
+                android:textSize="18dp"
+                android:gravity="center"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Expense"
+                android:layout_marginLeft="30dp"
+                android:textColor="#e41111"
+                android:textSize="18dp"
+                android:gravity="center"
+                />
+
+
+
+
+        </LinearLayout>
+
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="2dp"
+            android:layout_marginTop="10dp"
+            android:background="#0d0d0d" />
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="vertical"
+            >
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:orientation="horizontal"
+                    >
+
+                    <TextView
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"
+                        android:text="Jan"
+                        android:textColor="#000000"
+                        android:textSize="18dp"
+                        android:gravity="center"
+                        />
+
+
+                    <TextView
+                        android:id="@+id/textview_jan_income"
+                        android:layout_width="140dp"
+                        android:layout_height="wrap_content"
+                        android:text="Income"
+                        android:textColor="#000000"
+                        android:textSize="18dp"
+                        android:gravity="center"
+                        />
+
+                    <TextView
+                        android:id="@+id/textview_jan_expense"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Expense"
+                        android:layout_marginLeft="30dp"
+                        android:textColor="#000000"
+                        android:textSize="18dp"
+                        android:gravity="center"
+                        />
+
+                </LinearLayout>
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:orientation="horizontal"
+                    >
+
+                    <TextView
+                        android:layout_width="80dp"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text="Feb"
+                        android:textColor="#000000"
+                        android:textSize="18dp" />
+
+
+                    <TextView
+                        android:id="@+id/textview_feb_income"
+                        android:layout_width="140dp"
+                        android:layout_height="wrap_content"
+                        android:text="Income"
+                        android:textColor="#000000"
+                        android:textSize="18dp"
+                        android:gravity="center"
+                        />
+
+                    <TextView
+                        android:id="@+id/textview_feb_expense"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Expense"
+                        android:layout_marginLeft="30dp"
+                        android:textColor="#000000"
+                        android:textSize="18dp"
+                        android:gravity="center"
+                        />
+
+                </LinearLayout>
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:orientation="horizontal"
+                    >
+
+                    <TextView
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"
+                        android:text="Mar"
+                        android:textColor="#000000"
+                        android:textSize="18dp"
+                        android:gravity="center"
+                        />
+
+
+                    <TextView
+                        android:id="@+id/textview_march_income"
+                        android:layout_width="140dp"
+                        android:layout_height="wrap_content"
+                        android:text="Income"
+                        android:textColor="#000000"
+                        android:textSize="18dp"
+                        android:gravity="center"
+                        />
+
+                    <TextView
+                        android:id="@+id/textview_march_expense"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Expense"
+                        android:layout_marginLeft="30dp"
+                        android:textColor="#000000"
+                        android:textSize="18dp"
+                        android:gravity="center"
+                        />
+
+                </LinearLayout>
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:orientation="horizontal"
+                    >
+
+                    <TextView
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"
+                        android:text="Apr"
+                        android:textColor="#000000"
+                        android:textSize="18dp"
+                        android:gravity="center"
+                        />
+
+
+                    <TextView
+                        android:id="@+id/textview_april_income"
+                        android:layout_width="140dp"
+                        android:layout_height="wrap_content"
+                        android:text="Income"
+                        android:textColor="#000000"
+                        android:textSize="18dp"
+                        android:gravity="center"
+                        />
+
+                    <TextView
+                        android:id="@+id/textview_april_expense"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Expense"
+                        android:layout_marginLeft="30dp"
+                        android:textColor="#000000"
+                        android:textSize="18dp"
+                        android:gravity="center"
+                        />
+
+                </LinearLayout>
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:orientation="horizontal"
+                    >
+
+                    <TextView
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"
+                        android:text="May"
+                        android:textColor="#000000"
+                        android:textSize="18dp"
+                        android:gravity="center"
+                        />
+
+
+                    <TextView
+                        android:id="@+id/textview_may_income"
+                        android:layout_width="140dp"
+                        android:layout_height="wrap_content"
+                        android:text="Income"
+                        android:textColor="#000000"
+                        android:textSize="18dp"
+                        android:gravity="center"
+                        />
+
+                    <TextView
+                        android:id="@+id/textview_may_expense"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Expense"
+                        android:layout_marginLeft="30dp"
+                        android:textColor="#000000"
+                        android:textSize="18dp"
+                        android:gravity="center"
+                        />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:orientation="horizontal"
+                    >
+
+                    <TextView
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"
+                        android:text="June"
+                        android:textColor="#000000"
+                        android:textSize="18dp"
+                        android:gravity="center"
+                        />
+
+
+                    <TextView
+                        android:id="@+id/textview_june_income"
+                        android:layout_width="140dp"
+                        android:layout_height="wrap_content"
+                        android:text="Income"
+                        android:textColor="#000000"
+                        android:textSize="18dp"
+                        android:gravity="center"
+                        />
+
+                    <TextView
+                        android:id="@+id/textview_june_expense"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Expense"
+                        android:layout_marginLeft="30dp"
+                        android:textColor="#000000"
+                        android:textSize="18dp"
+                        android:gravity="center"
+                        />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:orientation="horizontal"
+                    >
+
+                    <TextView
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"
+                        android:text="July"
+                        android:textColor="#000000"
+                        android:textSize="18dp"
+                        android:gravity="center"
+                        />
+
+
+                    <TextView
+                        android:id="@+id/textview_july_income"
+                        android:layout_width="140dp"
+                        android:layout_height="wrap_content"
+                        android:text="Income"
+                        android:textColor="#000000"
+                        android:textSize="18dp"
+                        android:gravity="center"
+                        />
+
+                    <TextView
+                        android:id="@+id/textview_july_expense"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Expense"
+                        android:layout_marginLeft="30dp"
+                        android:textColor="#000000"
+                        android:textSize="18dp"
+                        android:gravity="center"
+                        />
+
+                </LinearLayout>
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:orientation="horizontal"
+                    >
+
+                    <TextView
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"
+                        android:text="Aug"
+                        android:textColor="#000000"
+                        android:textSize="18dp"
+                        android:gravity="center"
+                        />
+
+
+                    <TextView
+                        android:id="@+id/textview_august_income"
+                        android:layout_width="140dp"
+                        android:layout_height="wrap_content"
+                        android:text="Income"
+                        android:textColor="#000000"
+                        android:textSize="18dp"
+                        android:gravity="center"
+                        />
+
+                    <TextView
+                        android:id="@+id/textview_august_expense"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Expense"
+                        android:layout_marginLeft="30dp"
+                        android:textColor="#000000"
+                        android:textSize="18dp"
+                        android:gravity="center"
+                        />
+
+                </LinearLayout>
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:orientation="horizontal"
+                    >
+
+                    <TextView
+
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"
+                        android:text="Sep"
+                        android:textColor="#000000"
+                        android:textSize="18dp"
+                        android:gravity="center"
+                        />
+
+
+                    <TextView
+                        android:id="@+id/textview_september_income"
+                        android:layout_width="140dp"
+                        android:layout_height="wrap_content"
+                        android:text="Income"
+                        android:textColor="#000000"
+                        android:textSize="18dp"
+                        android:gravity="center"
+                        />
+
+                    <TextView
+                        android:id="@+id/textview_september_expense"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Expense"
+                        android:layout_marginLeft="30dp"
+                        android:textColor="#000000"
+                        android:textSize="18dp"
+                        android:gravity="center"
+                        />
+
+                </LinearLayout>
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:orientation="horizontal"
+                    >
+
+                    <TextView
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"
+                        android:text="Oct"
+                        android:textColor="#000000"
+                        android:textSize="18dp"
+                        android:gravity="center"
+                        />
+
+
+                    <TextView
+                        android:id="@+id/textview_october_income"
+                        android:layout_width="140dp"
+                        android:layout_height="wrap_content"
+                        android:text="Income"
+                        android:textColor="#000000"
+                        android:textSize="18dp"
+                        android:gravity="center"
+                        />
+
+                    <TextView
+                        android:id="@+id/textview_october_expense"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Expense"
+                        android:layout_marginLeft="30dp"
+                        android:textColor="#000000"
+                        android:textSize="18dp"
+                        android:gravity="center"
+                        />
+
+                </LinearLayout>
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:orientation="horizontal"
+                    >
+
+                    <TextView
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"
+                        android:text="Nov"
+                        android:textColor="#000000"
+                        android:textSize="18dp"
+                        android:gravity="center"
+                        />
+
+
+                    <TextView
+                        android:id="@+id/textview_november_income"
+                        android:layout_width="140dp"
+                        android:layout_height="wrap_content"
+                        android:text="Income"
+                        android:textColor="#000000"
+                        android:textSize="18dp"
+                        android:gravity="center"
+                        />
+
+                    <TextView
+                        android:id="@+id/textview_november_expense"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Expense"
+                        android:layout_marginLeft="30dp"
+                        android:textColor="#000000"
+                        android:textSize="18dp"
+                        android:gravity="center"
+                        />
+
+                </LinearLayout>
+
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginBottom="70dp"
+                    android:orientation="horizontal"
+                    >
+
+                    <TextView
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"
+                        android:text="Dec"
+                        android:textColor="#000000"
+                        android:textSize="18dp"
+                        android:gravity="center"
+                        />
+
+
+                    <TextView
+                        android:id="@+id/textview_december_income"
+                        android:layout_width="140dp"
+                        android:layout_height="wrap_content"
+                        android:text="Income"
+                        android:textColor="#000000"
+                        android:textSize="18dp"
+                        android:gravity="center"
+                        />
+
+                    <TextView
+                        android:id="@+id/textview_december_expense"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Expense"
+                        android:textColor="#000000"
+                        android:textSize="18dp"
+                        android:gravity="center"
+                        android:layout_marginLeft="30dp"
+                        />
+
+                </LinearLayout>
+
+
+
+
+
+            </LinearLayout>
+
+
+
+        </ScrollView>
+
+
+
+
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/button_graph"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="Graph View"
+        android:layout_margin="10dp"
+        android:background="@drawable/buttonshape_pocket"
+        android:textColor="#ffffff"
+        />
+
+
+</RelativeLayout>

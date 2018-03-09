@@ -1,0 +1,527 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.asif047.pocketmoney.PieChart.PieIncomeActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        >
+
+
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_left_slider"
+            />
+
+
+        <HorizontalScrollView
+            android:id="@+id/horizontalScroll"
+            android:layout_width="300dp"
+            android:layout_height="400dp"
+            android:animateLayoutChanges="true"
+            android:layout_marginTop="30dp"
+            android:background="#FDE3A7"
+            android:scrollbars="horizontal"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            >
+
+            <LinearLayout
+                android:id="@+id/category_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+
+                android:scrollbars="horizontal"
+                >
+
+
+                <LinearLayout
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginRight="20dp"
+                    >
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="January"
+                        android:textSize="20dp"
+                        android:textStyle="bold"
+                        android:textColor="#000000"
+
+                        android:layout_gravity="center"
+                        />
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <com.github.mikephil.charting.charts.PieChart
+                            android:id="@+id/piechart_jan"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"></com.github.mikephil.charting.charts.PieChart>
+
+
+                    </RelativeLayout>
+
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginRight="20dp"
+                    >
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="February"
+                        android:textSize="20dp"
+                        android:textStyle="bold"
+                        android:textColor="#000000"
+
+                        android:layout_gravity="center"
+                        />
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <com.github.mikephil.charting.charts.PieChart
+                            android:id="@+id/piechart_feb"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"></com.github.mikephil.charting.charts.PieChart>
+
+
+                    </RelativeLayout>
+
+
+
+                </LinearLayout>
+
+
+
+
+
+                <LinearLayout
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginRight="20dp"
+                    >
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="March"
+                        android:textSize="20dp"
+                        android:textStyle="bold"
+                        android:textColor="#000000"
+
+                        android:layout_gravity="center"
+                        />
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <com.github.mikephil.charting.charts.PieChart
+                            android:id="@+id/piechart_march"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"></com.github.mikephil.charting.charts.PieChart>
+
+
+                    </RelativeLayout>
+
+
+
+                </LinearLayout>
+
+
+
+
+                <LinearLayout
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginRight="20dp"
+                    >
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="April"
+                        android:textSize="20dp"
+                        android:textStyle="bold"
+                        android:textColor="#000000"
+
+                        android:layout_gravity="center"
+                        />
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <com.github.mikephil.charting.charts.PieChart
+                            android:id="@+id/piechart_april"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"></com.github.mikephil.charting.charts.PieChart>
+
+
+                    </RelativeLayout>
+
+
+
+                </LinearLayout>
+
+
+
+                <LinearLayout
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginRight="20dp"
+                    >
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="May"
+                        android:textSize="20dp"
+                        android:textStyle="bold"
+                        android:textColor="#000000"
+
+                        android:layout_gravity="center"
+                        />
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <com.github.mikephil.charting.charts.PieChart
+                            android:id="@+id/piechart_may"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"></com.github.mikephil.charting.charts.PieChart>
+
+
+                    </RelativeLayout>
+
+
+
+                </LinearLayout>
+
+
+
+
+                <LinearLayout
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginRight="20dp"
+                    >
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="June"
+                        android:textSize="20dp"
+                        android:textStyle="bold"
+                        android:textColor="#000000"
+
+                        android:layout_gravity="center"
+                        />
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <com.github.mikephil.charting.charts.PieChart
+                            android:id="@+id/piechart_june"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"></com.github.mikephil.charting.charts.PieChart>
+
+
+                    </RelativeLayout>
+
+
+
+                </LinearLayout>
+
+
+
+                <LinearLayout
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginRight="20dp"
+                    >
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="July"
+                        android:textSize="20dp"
+                        android:textStyle="bold"
+                        android:textColor="#000000"
+
+                        android:layout_gravity="center"
+                        />
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <com.github.mikephil.charting.charts.PieChart
+                            android:id="@+id/piechart_july"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"></com.github.mikephil.charting.charts.PieChart>
+
+
+                    </RelativeLayout>
+
+
+
+                </LinearLayout>
+
+
+
+
+                <LinearLayout
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginRight="20dp"
+                    >
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="August"
+                        android:textSize="20dp"
+                        android:textStyle="bold"
+                        android:textColor="#000000"
+
+                        android:layout_gravity="center"
+                        />
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <com.github.mikephil.charting.charts.PieChart
+                            android:id="@+id/piechart_aug"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"></com.github.mikephil.charting.charts.PieChart>
+
+
+                    </RelativeLayout>
+
+
+
+                </LinearLayout>
+
+
+
+
+                <LinearLayout
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginRight="20dp"
+                    >
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="September"
+                        android:textSize="20dp"
+                        android:textStyle="bold"
+                        android:textColor="#000000"
+
+                        android:layout_gravity="center"
+                        />
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <com.github.mikephil.charting.charts.PieChart
+                            android:id="@+id/piechart_sep"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"></com.github.mikephil.charting.charts.PieChart>
+
+
+                    </RelativeLayout>
+
+
+
+                </LinearLayout>
+
+
+
+                <LinearLayout
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginRight="20dp"
+                    >
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="October"
+                        android:textSize="20dp"
+                        android:textStyle="bold"
+                        android:textColor="#000000"
+
+                        android:layout_gravity="center"
+                        />
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <com.github.mikephil.charting.charts.PieChart
+                            android:id="@+id/piechart_oct"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"></com.github.mikephil.charting.charts.PieChart>
+
+
+                    </RelativeLayout>
+
+
+
+                </LinearLayout>
+
+
+
+                <LinearLayout
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginRight="20dp"
+                    >
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="November"
+                        android:textSize="20dp"
+                        android:textStyle="bold"
+                        android:textColor="#000000"
+
+                        android:layout_gravity="center"
+                        />
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <com.github.mikephil.charting.charts.PieChart
+                            android:id="@+id/piechart_nov"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"></com.github.mikephil.charting.charts.PieChart>
+
+
+                    </RelativeLayout>
+
+
+
+                </LinearLayout>
+
+
+
+
+                <LinearLayout
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginRight="20dp"
+                    >
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="December"
+                        android:textSize="20dp"
+                        android:textStyle="bold"
+                        android:textColor="#000000"
+
+                        android:layout_gravity="center"
+                        />
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <com.github.mikephil.charting.charts.PieChart
+                            android:id="@+id/piechart_dec"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"></com.github.mikephil.charting.charts.PieChart>
+
+
+                    </RelativeLayout>
+
+
+
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+
+        </HorizontalScrollView>
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_right_slider"
+            />
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

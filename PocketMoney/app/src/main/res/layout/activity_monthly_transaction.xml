@@ -1,0 +1,443 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.asif047.pocketmoney.MonthlyTransactionActivity">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+
+        >
+
+
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+
+            android:src="@drawable/ic_left_slider"
+            />
+
+
+        <HorizontalScrollView
+            android:id="@+id/horizontalScroll"
+            android:layout_width="300dp"
+            android:layout_height="500dp"
+            android:animateLayoutChanges="true"
+            android:layout_marginTop="20dp"
+            android:background="#FDE3A7"
+            android:scrollbars="horizontal"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            >
+
+            <LinearLayout
+                android:id="@+id/category_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+
+                android:scrollbars="horizontal"
+
+                >
+
+
+
+                <LinearLayout
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginRight="20dp"
+                    >
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="January"
+                        android:textSize="20dp"
+                        android:textColor="#000000"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="10dp"
+                        android:layout_gravity="center"
+                        />
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/recycler_january"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        ></android.support.v7.widget.RecyclerView>
+
+
+                </LinearLayout>
+
+
+
+
+                <LinearLayout
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+
+                    >
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="February"
+                        android:textSize="20dp"
+                        android:textColor="#000000"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="10dp"
+                        android:layout_gravity="center"
+                        />
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/recyclerview_february"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        ></android.support.v7.widget.RecyclerView>
+
+
+                </LinearLayout>
+
+
+
+
+                <LinearLayout
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+
+                    >
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="March"
+                        android:textSize="20dp"
+                        android:textColor="#000000"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="10dp"
+                        android:layout_gravity="center"
+                        />
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/recylerview_march"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        ></android.support.v7.widget.RecyclerView>
+
+
+                </LinearLayout>
+
+
+
+
+
+                <LinearLayout
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+
+                    >
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="April"
+                        android:textSize="20dp"
+                        android:textColor="#000000"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="10dp"
+                        android:layout_gravity="center"
+                        />
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/recyclerview_april"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        ></android.support.v7.widget.RecyclerView>
+
+
+                </LinearLayout>
+
+
+
+                <LinearLayout
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+
+                    >
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="May"
+                        android:textSize="20dp"
+                        android:textColor="#000000"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="10dp"
+                        android:layout_gravity="center"
+                        />
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/recyclerview_may"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        ></android.support.v7.widget.RecyclerView>
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+
+                    >
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="June"
+                        android:textSize="20dp"
+                        android:textColor="#000000"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="10dp"
+                        android:layout_gravity="center"
+                        />
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/recyclerview_june"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        ></android.support.v7.widget.RecyclerView>
+
+
+                </LinearLayout>
+
+
+
+                <LinearLayout
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+
+                    >
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="July"
+                        android:textSize="20dp"
+                        android:textColor="#000000"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="10dp"
+                        android:layout_gravity="center"
+                        />
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/recyclerview_july"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        ></android.support.v7.widget.RecyclerView>
+
+
+                </LinearLayout>
+
+
+
+                <LinearLayout
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+
+                    >
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="August"
+                        android:textSize="20dp"
+                        android:textColor="#000000"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="10dp"
+                        android:layout_gravity="center"
+                        />
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/recyclerview_august"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        ></android.support.v7.widget.RecyclerView>
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+
+                    >
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="September"
+                        android:textSize="20dp"
+                        android:textColor="#000000"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="10dp"
+                        android:layout_gravity="center"
+                        />
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/recyclerview_september"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        ></android.support.v7.widget.RecyclerView>
+
+
+                </LinearLayout>
+
+
+
+                <LinearLayout
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+
+                    >
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="October"
+                        android:textSize="20dp"
+                        android:textColor="#000000"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="10dp"
+                        android:layout_gravity="center"
+                        />
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/recyclerview_october"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        ></android.support.v7.widget.RecyclerView>
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+
+                    >
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="November"
+                        android:textSize="20dp"
+                        android:textColor="#000000"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="10dp"
+                        android:layout_gravity="center"
+                        />
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/recyclerview_november"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        ></android.support.v7.widget.RecyclerView>
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+
+                    >
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="December"
+                        android:textSize="20dp"
+                        android:textColor="#000000"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="10dp"
+                        android:layout_gravity="center"
+                        />
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/recyclerview_december"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        ></android.support.v7.widget.RecyclerView>
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+        </HorizontalScrollView>
+
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_right_slider"
+            />
+
+    </LinearLayout>
+
+
+</RelativeLayout>
